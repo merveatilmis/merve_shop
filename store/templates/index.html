@@ -1,0 +1,63 @@
+{% extends 'base.html' %}
+{% block title %}Merve's Handmade Cups{% endblock title %}
+{% block content %}
+
+<!-- Body -->
+<div class="container-fluid mt-3">
+    <div class="row">
+        <!-- Tüm ürünler -->
+        <div class="col-lg-9 mx-auto">
+            <div class="row mx-auto">
+                <!-- Bardaklar -->
+                <div class="card mx-auto mb-3" style="width: 18rem;">
+                    <img class="card-img-top" src="C:\merve_shop\uploads\products\cup1.jpeg" alt="Cup 1">
+                    <div class="card-body">
+                        <p class="card-title">Cup 1</p>
+                        <p class="card-text"><b>$10</b></p>
+                    </div>
+                    <div class="card-footer p-0 no-gutters">
+                        <form action="#" method="POST" class="btn-block">
+                            {% csrf_token %}
+                            <input hidden type="text" name="product" value="Cup 1">
+                            <input type="submit" class="float-right btn btn-success form-control"
+                                value="Add To Cart">
+                        </form>
+                    </div>
+                </div>
+                <div class="card mx-auto mb-3" style="width: 18rem;">
+                    <img class="card-img-top" src="C:\merve_shop\uploads\products\cup2.jpeg" alt="Cup 2">
+                    <div class="card-body">
+                        <p class="card-title">Cup 2</p>
+                        <p class="card-text"><b>$15</b></p>
+                    </div>
+                    <div class="card-footer p-0 no-gutters">
+                        <form action="#" method="POST" class="btn-block">
+                            {% csrf_token %}
+                            <input hidden type="text" name="product" value="Cup 2">
+                            <input type="submit" class="float-right btn btn-success form-control"
+                                value="Add To Cart">
+                        </form>
+                    </div>
+                </div>
+                <div class="card mx-auto mb-3" style="width: 18rem;">
+                    <img class="card-img-top" src="C:\merve_shop\uploads\products\cup3.jpeg" alt="Cup 3">
+                    <div class="card-body">
+                        <p class="card-title">Cup 3</p>
+                        <p class="card-text"><b>$20</b></p>
+                    </div>
+                    <div class="card-footer p-0 no-gutters">
+                        <form action="#" method="POST" class="btn-block">
+                            {% csrf_token %}
+                            <input hidden type="text" name="product" value="Cup 3">
+                            <input type="submit" class="float-right btn btn-success form-control"
+                                value="Add To Cart">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}
+
